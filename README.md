@@ -3,6 +3,14 @@
 npm install
 ```
 
+# how to run
+  'host': process.env["HOST"]
+  'port': process.env["PORT"] or 1883
+  'username': process.env["USERNAME"]
+  'password': process.env["PASSWORD"]
+```
+  HOST=yourchat.server PORT=1883 USERNAME=yourid PASSWORD=yourpassword coffee sheepchat_server.coffee
+```
 # client쪽 사정
 * 대기자 확인을 위해 waiter라는 topic으로 자신의 UUID를 전송하고
 * 결과를 듣기 위해 queue/<UUID> 형태로 subs를 한다.

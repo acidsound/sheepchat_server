@@ -1,9 +1,11 @@
 waiter = ''
+console.log process.env["HOST"]
 mqtt = require 'mqtt'
 client = mqtt.connect
-  'host': 'sheepchat.malibu-apps.com'
-  'username': 'malibu'
-  'password': 'rhwlqheld'
+  'host': process.env["HOST"]
+  'port': process.env["PORT"] or 1883
+  'username': process.env["USERNAME"]
+  'password': process.env["PASSWORD"]
 console.log 'server started'
 client.on 'connect', ->
   console.log 'MQTT connected'
