@@ -4,10 +4,6 @@ npm install
 ```
 
 # how to run
-  'host': process.env["HOST"]
-  'port': process.env["PORT"] or 1883
-  'username': process.env["USERNAME"]
-  'password': process.env["PASSWORD"]
 ```
   HOST=yourchat.server PORT=1883 USERNAME=yourid PASSWORD=yourpassword coffee sheepchat_server.coffee
 ```
