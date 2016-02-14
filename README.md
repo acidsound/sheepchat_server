@@ -1,3 +1,8 @@
+# install
+```
+npm install
+```
+
 # client쪽 사정
 * 대기자 확인을 위해 waiter라는 topic으로 자신의 UUID를 전송하고
 * 결과를 듣기 위해 queue/<UUID> 형태로 subs를 한다.
