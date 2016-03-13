@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "docker build -t sheepchat_server .",
-    "start": "docker run -i -t -p 1883:1883 -v $PWD/src:/work --name sheepchat_server sheepchat_server sh run.sh",
+    "start": "docker run -d --restart=always -p 1883:1883 -v $PWD/src:/work --name sheepchat_server sheepchat_server sh run.sh",
     "rm": "docker rm sheepchat_server"
   },
   "author": "spectrum",

@@ -20,6 +20,7 @@ ibe 를 진행하면 된다.
 
 # Dockerize
 * npm 으로 자동화
+1. mosquitto broker를 위한 사용자 설정을 ```mosquitto_passwd /etc/mosquitto/passwd <사용자명>```으로 추가
 1. ```npm run build``` - docker image 생성
 1. ```npm start``` - server 실행
 1. ```npm run rm``` - container 삭제 

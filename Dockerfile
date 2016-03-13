@@ -6,5 +6,7 @@ RUN apk --update add mosquitto
 #RUN service mosquitto start
 RUN mkdir /work
 VOLUME /work
+COPY conf/mosquitto.conf /etc/mosquitto/mosquitto.conf
+COPY conf/passwd /etc/mosquitto/passwd
 WORKDIR /work
-EXPOSE 1883 
+EXPOSE 1883
