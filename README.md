@@ -17,3 +17,9 @@ ibe 를 진행하면 된다.
 * 서버에선 waiter topic 으로 무언가가 들어오면
 * 대기자가 있을 경우 대기자의 UUID를 
 * 아니면 스스로의 UUID를 요청자의 queue/<UUID>로 publish한다.
+
+# Dockerize
+* npm 으로 자동화
+1. ```npm run build``` - docker image 생성
+1. ```npm start``` - server 실행
+1. ```npm run rm``` - container 삭제 

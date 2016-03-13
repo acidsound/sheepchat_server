@@ -2,6 +2,7 @@ waiter = ''
 haiter = ''
 log = (q)-> console.log "#{(new Date()).toISOString()}:#{q}"
 log process.env["HOST"]
+log "no waiter"
 mqtt = require 'mqtt'
 client = mqtt.connect
   'host': process.env["HOST"]

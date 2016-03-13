@@ -1,0 +1,15 @@
+{
+  "name": "sheepchat_server",
+  "version": "1.0.0",
+  "description": "dumbass mqtt random chat server",
+  "main": "sheepchat_server.coffee",
+  "dependencies": {
+    "mqtt": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "spectrum",
+  "license": "ISC"
+}
